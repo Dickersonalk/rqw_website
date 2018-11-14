@@ -1,0 +1,10 @@
+{% extends 'blog/blog_base.html' %}
+{% block article %}
+{% for Articless in Articless %}
+    <div class="col-xs-6 col-lg-4">
+              <h4>{{ Articless.title }}</h4>
+              <p>{{ Articless.description }}</p>
+              <p><a class="btn btn-default" href="{% url 'blog_detail' %}" role="button">View details &raquo;</a></p>
+            </div><!--/.col-xs-6.col-lg-4-->
+{% endfor %}
+{% endblock %}

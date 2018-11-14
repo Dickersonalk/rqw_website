@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script type="text/javascript" src="/static/jquery_1.9/jquery.js"></script>
+    <script type="text/javascript" src="/static/jquery_1.9/jquery.min.js"></script>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="block">
+    <h2 style="margin-left: 100px">我的留言本-欢迎大家的留言</h2>
+    <div class="done"></div>
+    <b>谢谢！</b>
+</div>
+<div class="form">
+<form method="post" action="process.php">
+    <div class="element">
+        <label>姓名</label>
+        <input type="text" name="name" class="text" />
+    </div>
+    <div class="element">
+        <label>Email</label>
+        <input type="text" name="email" class="text" />
+    </div>
+    <div class="element">
+        <label>网站</label>
+        <input type="text" name="website" class="text" />
+    </div>
+     <div class="element">
+        <label>留言</label>
+        <textarea name="comment" class="text text-textarea"></textarea>
+    </div>
+    <div class="element">
+        <input type="submit" id="submit">
+        <!-- 提交按钮 -->
+        <div class="loading"></div>
+        <!-- 加载提示 -->
+    </div>
+
+
+</form>
+</div>
+
+</body>
+</html>
